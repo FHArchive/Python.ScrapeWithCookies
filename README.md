@@ -13,3 +13,18 @@ To install Python, go to https://www.python.org/ and download the latest version
 2. (If downloaded) Extract the zip archive
 3. Open the .py file in IDLE
 4. Run by pressing F5 or by selecting Run> Run Module
+
+# Use 
+Configure these three constants to run the program 
+- Run the program in 'debug' mode 
+```python
+DEBUG = True
+```
+- Web page to scrape 
+```python
+START_PAGE = ''
+```
+- Web page to submit answer to
+```python
+END_PAGE = ''
+```
