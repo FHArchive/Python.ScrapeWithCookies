@@ -2,11 +2,11 @@
 Kieran W 2019
 
 Web scraper with cookies. Take the cookie from one page and use it to access
-another 
+another
 '''
-# Run the program in 'debug' mode 
+# Run the program in 'debug' mode
 DEBUG = True
-# Web page to scrape 
+# Web page to scrape
 START_PAGE = ''
 # Web page to submit answer to
 END_PAGE = ''
@@ -25,10 +25,10 @@ if(not DEBUG):
     import warnings
     warnings.filterwarnings("ignore")
 
-    
+
 '''
-Start web session and get the cookie 
-''' 
+Start web session and get the cookie
+'''
 import requests
 session = requests.Session()
 startPage = session.get(START_PAGE)
@@ -56,7 +56,7 @@ class MyHTMLParser(HTMLParser):
     def handle_data(self, data):
         if(DEBUG):
             print("Data:", data)
-        usefulData.append( data)          
+        usefulData.append( data)
 parser = MyHTMLParser()
 parser.feed(str(pageContents))
 
