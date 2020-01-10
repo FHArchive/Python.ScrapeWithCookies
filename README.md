@@ -16,7 +16,8 @@
 <img src="readme-assets/icons/name.png" alt="Project Icon" width="750">
 
 
-Web scraper with cookies. Take the cookie from one page and use it to access another
+Web scraper with cookies. Take the cookie from one page and use it
+to access another
 
 ## Use
 Configure these three constants to run the program
